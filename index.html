@@ -26,14 +26,14 @@
     <h2>Optional problem reports</h2>
     <p>You may voluntarily choose <strong>Report a problem</strong>. SayBite shows the complete report and every selected attachment before opening your email app. You can remove a photo or audio attachment, cancel, or make the final sending decision in your email app.</p>
     <p>A sent report may contain your description, expected result, current transcript or scan result, SayBite and Android versions, device manufacturer and model, app language, capture method, time, a random report ID, your sender email address, and only the photo or WAV audio you selected. It never automatically includes meal history, other meals, goals, reminders, saved products, full logs, AI prompts, advertising identifiers, IMEI, or account identifiers.</p>
-    <p>Your chosen email provider and Linear process sent reports only to investigate the reported problem. Reports are not sold, used for advertising, or used for passive analytics.</p>
+    <p>Your chosen email provider and Linear process sent reports. A restricted OpenAI Codex monitor periodically reads new Linear report text and, when supported by its connector, the selected image or audio, then posts one triage comment. It treats report content as untrusted and cannot access the SayBite repository, implement code, change workflow fields, close issues, or publish releases. These providers are used only to investigate the reported problem. Reports are not sold, used for advertising, or used for passive analytics.</p>
 
     <h2>Local retention</h2>
     <p>Temporary scan photos and voice-review audio remain only in SayBite's private cache while you review the same entry. If you open the email chooser with an attachment, SayBite creates a read-only cache copy for the email app and deletes expired copies after at most 24 hours.</p>
 
     <h2>Remote retention</h2>
     <p>Every report includes a deletion deadline 60 days after it was created. The report queue is reviewed at least weekly. A report is deleted from the active Linear workspace within seven days after the issue is closed, after a verified deletion request, or by its 60-day deadline—whichever happens first.</p>
-    <p>Linear keeps deleted issues in a recoverable deleted-items area for up to 30 additional days before permanent removal. This makes the maximum Linear retention 90 days. Your email provider may keep the sent message according to your own account settings; you control and delete that copy separately.</p>
+    <p>Linear keeps deleted issues in a recoverable deleted-items area for up to 30 additional days before permanent removal. This makes the maximum Linear retention 90 days. Your email provider may keep the sent message according to your own account settings; you control and delete that copy separately. OpenAI processes triage runs under the service and data-control settings of the developer's connected account.</p>
 
     <h2 id="delete">Request deletion</h2>
     <div class="notice">
